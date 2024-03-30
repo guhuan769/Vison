@@ -15,15 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ConsoleApplication1.cpp">
+    <ClCompile Include="Myproject.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="TemplateMax.cpp">
+    <ClCompile Include="TemplateUse.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="TemplateMax.h">
+    <ClInclude Include="TemplateUse.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
