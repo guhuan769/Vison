@@ -127,10 +127,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FunctionTemplateMultiTypeDefinition.cpp" />
+    <ClCompile Include="FunctionTemplateMultiTypeDefinitionCase2.cpp" />
     <ClCompile Include="Myproject.cpp" />
+    <ClCompile Include="TemplateMatching.cpp" />
     <ClCompile Include="TemplateUse.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FunctionTemplateMultiTypeDefinition.h" />
+    <ClInclude Include="FunctionTemplateMultiTypeDefinitionCase2.h" />
+    <ClInclude Include="TemplateMatching.h" />
     <ClInclude Include="TemplateUse.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
