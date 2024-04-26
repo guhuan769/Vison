@@ -30,6 +30,9 @@
     <ClCompile Include="FunctionTemplateMultiTypeDefinitionCase2.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="FunctionTemplateMultiTypeDefinitionComprehensiveCase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TemplateUse.h">
@@ -42,6 +45,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="FunctionTemplateMultiTypeDefinitionCase2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FunctionTemplateMultiTypeDefinitionComprehensiveCase.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

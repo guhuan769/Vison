@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hdevelop file_version="1.2" halcon_version="22.11.2.0">
+<procedure name="main">
+<interface/>
+<body>
+<c>** 窗口相关的算子</c>
+<c>** 对于但不执行不生效，必须是程序正常运行</c>
+<l>* dev_update_window('off')</l>
+<l>* dev_update_window('on')</l>
+<l>dev_update_off ()</l>
+<c>** 开启窗口图像自动更新</c>
+<l>* dev_update_on ()</l>
+<c>**清除窗口</c>
+<l>dev_clear_window ()</l>
+<c>** 打开新窗口</c>
+<l>dev_open_window (0, 0, 512, 512, 'gray', WindowHandle)</l>
+<c>** 设置窗口的属性</c>
+<c>** 设置颜色</c>
+<l>dev_set_color ('green')</l>
+<l>dev_set_colored(12)</l>
+<c>** 设置填充模式</c>
+<l>dev_set_draw ('margin')</l>
+<c>** 设置线宽</c>
+<l>dev_set_line_width(3)</l>
+<c>** 设置窗口显示字体及大小</c>
+<l>set_display_font (WindowHandle, 32, 'mono', 'true', 'false')</l>
+<c>** 程序执行打开和关闭期间，图像对象是否在图形窗口中显示</c>
+<l>read_image (Image, 'printer_chip/printer_chip_01')</l>
+<c>** 图像到新窗口</c>
+<l>dev_display (Image)</l>
+<c>** 显示文本</c>
+<l>dev_disp_text ('Halcon窗口相关操作算子', 'window', 50, 80, 'white', ['box','box_color'], ['true','orange'])</l>
+<c>** 显示继续字样</c>
+<l>disp_continue_message (WindowHandle, 'black', 'true')</l>
+<c>** 提示文字</c>
+<l>write_string (WindowHandle, 'hello')</l>
+<c>** 将窗口的内容截图为一张图像  该算子用的 比较多</c>
+<l>dump_window_image (Image1, WindowHandle)</l>
+<c></c>
+<l>* while (1)</l>
+<c>    ** 获取鼠标点击按钮的索引值</c>
+<l>    get_mbutton (WindowHandle, Row, Column, ButtonIndex)</l>
+<l>    disp_message (WindowHandle, '按下鼠标的索引'+ButtonIndex, 'window', 200, 150, 'green', 'true')</l>
+<l>* endwhile</l>
+<c>    </c>
+<c>** 在窗口上显示十字叉，箭头</c>
+<c></c>
+<l>  disp_cross (WindowHandle, 300, 300, 100, 60)</l>
+<c>  ** 箭头</c>
+<l>  disp_arrow (WindowHandle, 300, 300, 300, 500, 5)</l>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+</body>
+<docu id="main">
+<parameters/>
+</docu>
+</procedure>
+</hdevelop>

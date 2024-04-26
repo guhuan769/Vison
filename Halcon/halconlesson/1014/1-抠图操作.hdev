@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hdevelop file_version="1.2" halcon_version="22.11.2.0">
+<procedure name="main">
+<interface/>
+<body>
+<c>** 快速使用Halcon实现图像扣取操作</c>
+<c>** 窗口属性设置</c>
+<l>dev_set_draw ('margin')</l>
+<c>  ** 设置线条颜色</c>
+<l>dev_set_color ('green') </l>
+<c>  ** 设置线条宽度</c>
+<l>dev_open_window (0, 0, 512, 512, 'black', WindowHandle1)</l>
+<l>dev_set_line_width (3)</l>
+<c>** 获取当前显示图像的窗口句柄</c>
+<l>dev_get_window (WindowHandle)</l>
+<c>** 读取图像</c>
+<l>read_image(Image,'printer_chip/printer_chip_01')</l>
+<c>** 绘制抠图区域</c>
+<l>draw_rectangle1 (WindowHandle, Row1, Column1, Row2, Column2)</l>
+<c>** 根据绘制的行列坐标生成矩形区域</c>
+<l>gen_rectangle1 (Rectangle, Row1, Column1, Row2, Column2)</l>
+<c>** 获取当前区域的域范围</c>
+<l>reduce_domain (Image, Rectangle, ImageReduced)</l>
+<c>** 扣出显示的二维码图像</c>
+<l>crop_domain (ImageReduced, ImagePart)</l>
+</body>
+<docu id="main">
+<parameters/>
+</docu>
+</procedure>
+</hdevelop>
