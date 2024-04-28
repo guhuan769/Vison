@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hdevelop file_version="1.2" halcon_version="22.11.2.0">
+<procedure name="main">
+<interface/>
+<body>
+<c>** 关闭窗口</c>
+<l>dev_close_window()</l>
+<c>** 读取图像</c>
+<l>read_image (Image, 'images/4-1.png')</l>
+<c></c>
+<c></c>
+<c>** 把一个图像进行缩放(处理图片比较大的情况下)</c>
+<l>zoom_image_factor (Image, ImageZoomed, 0.5, 0.5, 'constant')</l>
+<c></c>
+<c>** 获取图像的尺寸</c>
+<l>get_image_size (ImageZoomed, Width, Height)</l>
+<c>** 打开一个适应图像的窗口</c>
+<l>dev_open_window (0, 0, Width, Height, 'black', WindowHandle)</l>
+<l>dev_open_window (0, 0, Width, Height, 'black', WindowHandle1)</l>
+<l>dev_display (ImageZoomed)</l>
+<c>** 设置指定窗口句柄（激活窗口）</c>
+<l>dev_set_window (WindowHandle)</l>
+<l>dev_display (ImageZoomed)</l>
+<c></c>
+</body>
+<docu id="main">
+<parameters/>
+</docu>
+</procedure>
+</hdevelop>
