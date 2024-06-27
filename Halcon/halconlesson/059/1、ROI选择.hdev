@@ -22,6 +22,9 @@
 <l>dev_set_window (WindowHandle)</l>
 <l>dev_display (ImageZoomed)</l>
 <c></c>
+<c></c>
+<c></c>
+<c></c>
 </body>
 <docu id="main">
 <parameters/>
